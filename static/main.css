@@ -1,0 +1,243 @@
+/* landing page css start from here */
+.MENU ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.MENU ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3 all;
+}
+
+.MENU ul li a:hover {
+    color: black;
+}
+
+.hover-line::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #a26bff;
+    transform: width 0.3s;
+}
+
+.hover-line:hover:after {
+    width: 100%;
+    transition: width 0.4s;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* landing page css end here */
+
+
+/* contact us styling start from here */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background: #fcfbff;
+}
+
+.section-100 {
+    padding-top: 21px;
+    padding-bottom: 100px;
+}
+
+.m-b-15 {
+    margin-bottom: 15px;
+}
+
+.m-r-5 {
+    margin-right: 5px;
+}
+
+.light-grey {
+    color: #aaa;
+}
+
+.contact-form {
+    background: #fff;
+    box-shadow: 10px 10px 21px 0px rgb(0 0 0 / 75%);
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 993px) {
+    .contact-form {
+        flex-wrap: nowrap;
+    }
+}
+
+.contact-form__left {
+    background: linear-gradient(to bottom, #4a4675, #1b183b);
+    color: #fff;
+    padding: 30px 30px 80px 30px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+@media (min-width: 993px) {
+    .contact-form__left {
+        width: 350px;
+        transform: scale(1.05);
+    }
+}
+
+.contact-form__left_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.contact-form__left_footer a {
+    margin-right: 2px;
+    padding: 8px;
+    color: #ccc;
+}
+
+.contact-form__left_footer a:hover {
+    color: #fff;
+}
+
+.contact-form__right {
+    padding: 30px;
+    width: 100%;
+}
+
+@media (min-width: 993px) {
+    .contact-form__right {
+        padding: 60px;
+        width: calc(100% - 350px);
+    }
+}
+
+.btn-primary {
+    background: #2f2963;
+    border-color: #2f2963;
+}
+
+.btn-primary:hover {
+    background: #2f2963;
+    border-color: #2f2963;
+}
+
+/* contact us styling end here */
+
+/* popup login styling start from here */
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.modal-login {
+    color: #636363;
+    width: 350px;
+}
+
+.modal-login .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-login .modal-header {
+    border-bottom: none;
+    position: relative;
+    justify-content: center;
+}
+
+.modal-login h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+}
+
+.modal-login .form-control:focus {
+    border-color: #70c5c0;
+}
+
+.modal-login .form-control,
+.modal-login .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.modal-login .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.modal-login .modal-footer {
+    background: #ecf0f1;
+    border-color: #dee4e7;
+    text-align: center;
+    justify-content: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.modal-login .modal-footer a {
+    color: #999;
+}
+
+.modal-login .avatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-login .avatar img {
+    width: 100%;
+}
+
+.modal-login.modal-dialog {
+    margin-top: 80px;
+}
+
+.modal-login .btn,
+.modal-login .btn:active {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1 !important;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+
+.modal-login .btn:hover,
+.modal-login .btn:focus {
+    background: #45aba6 !important;
+    outline: none;
+}
+
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+/* popup login styling end here */
+
+
+
+
