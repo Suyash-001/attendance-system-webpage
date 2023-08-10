@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from homepage import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('homepage.urls')),
     path('login/', views.login, name="login"),
-    path('signup/', views.signup, name="signup")
+    path('signup/', views.signup, name="signup"),
+    path('select/', views.select, name="select"),
+    path('attendance/', views.addstudent1, name="student"),
+    path('attendance/store', views.storeattendance, name="store")
 ]
